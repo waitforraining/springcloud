@@ -1,0 +1,15 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+title 修改文章内容时序图
+autonumber
+participant 用户
+participant 前端页面
+participant 管理后台
+用户 -> 前端页面: 点击修改文章按钮
+前端页面 -> 前端页面: 修改文章内容
+前端页面 -> 管理后台: 发出请求
+管理后台 -> 管理后台: 业务逻辑操作
+管理后台 -> 前端页面: 返回请求结果
+
+
+@enduml

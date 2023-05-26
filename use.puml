@@ -1,0 +1,17 @@
+@startuml
+' https://plantuml.com/use-case-diagram
+title 库存管理用例图
+left to right direction
+管理员 --> 库存管理
+rectangle 库存管理{
+    (库存管理) --> (新增商品):<<include>>
+    (库存管理) --> (查询商品):<<include>>
+    (库存管理) --> (修改商品):<<include>>
+}
+管理员 --> 用户管理
+rectangle 用户管理{
+    (用户管理) --> (查询用户):<<include>>
+    (用户管理) --> (删除用户):<<include>>
+    (用户管理) --> (增加用户):<<include>>
+}
+@enduml

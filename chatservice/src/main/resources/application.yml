@@ -1,0 +1,15 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: chatservice
+  cloud:
+    nacos:
+      server-addr: localhost:8848
+
+
+
+
+openai:
+  api:
+    key: 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
